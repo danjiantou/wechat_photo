@@ -1,0 +1,1307 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family:'Hiragino Sans GB','Microsoft Yahei',"WenQuanYi Micro Hei",SimSun,Tahoma,Arial,Helvetica,STHeiti;
+    background-color: #25293e;
+    font-size: 15px;
+    height: 100%
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+input,select,option,textarea{outline: none;}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.nei {
+    width:96%;
+    height:auto;
+    margin: 0 auto;
+    padding-bottom: 9px;
+    clear: both;
+    overflow: hidden;
+}
+section.box {
+    width: 100%;
+    height: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.box header {
+    width: 100%;
+    height: 80px;
+    margin: 0 auto;
+    background-color: #25293e;
+    clear: both;
+}
+
+.box header .back {
+    width: 25%;
+    height: 100%;
+    float: left;
+    background: url("../images/back.png") no-repeat;
+    background-size: 0.14rem auto;
+    background-position: .12rem center;
+}
+
+.box header .title {
+    height: 100%;
+    width: 50%;
+    font-size: 18px;
+    text-align: center;
+    float: left;
+    color: #fff;
+    line-height: 80px;
+}
+
+.box header .right {
+    width: 25%;
+    height: 100%;
+    float: right;
+}
+
+.box header .right a {
+    width: 100%;
+    height: 100%;
+    float: right;
+    display: block;
+}
+
+.box header .right div:nth-child(1) {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background: url("../images/fresh.png") no-repeat;
+    background-position: right center;
+    background-size: .25rem;
+}
+
+.box header .right div:nth-child(2) {
+    width: 50%;
+    height: 100%;
+    float: left;
+    text-align: right;
+    background: url("../images/share.png") no-repeat;
+    background-size: 0.23rem;
+    background-position: center;
+}
+
+.box main {
+    width: 100%;
+    height: auto;
+    background-color: #25293e;
+}
+
+.box main .banner {
+    width: 100%;
+    height: 390px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.box main .banner img {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.box main .content {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+.box main .content .quire {
+    width: 100%;
+    height: 252px;
+    margin: 0px auto;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/*.box main .content .quire .dP_icon{
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    left: 0;
+    top: -.12rem;
+    background: url("../images/pingxuanbiao.png") no-repeat;
+    background-size: auto;
+    background-position: 0.12rem center;
+}*/
+.box main .content .quire .title {
+    width: 100%;
+    height: auto;
+    font-size: 34px;
+    color: #fff;
+    text-align: center;
+    line-height: 100%;
+    position: absolute;
+    font-style: italic;
+    top: 50%;
+    margin: -22px auto;
+    z-index: 1;
+    width: 100%;
+    text-shadow: 3px 0px 0px #000, -3px 0px 0px #000, 0px 3px 0px #000, 0px -3px 0px #000;
+}
+
+.box main .content .quire i:nth-child(1) {
+    width: 190px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #f44975;
+    font-size: 12px;
+    text-align: center;
+    font-style: normal;
+    position: absolute;
+    color: #fff;
+    left: -67px;
+    top: 16px;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+}
+
+.box main .content .quire img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.box main .content .quire img.content :nth-child(2) {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*list css*/
+.box .list_quire {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+}
+.box main .list_quire div:nth-child(1) {
+    width: 100%;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.box main .list_quire .title {
+    width: 100%;
+    height: 58px;
+    font-size: 33px;
+    color: #fff;
+    text-align: center;
+    font-family: "Arial", "Microsoft YaHei", "ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â²ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚ÂÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¹Ã…â€œÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“";
+    line-height: 100%;
+    position: absolute;
+    font-style: italic;
+    top: 50%;
+    margin: -25px auto;
+    z-index: 0;
+    text-shadow: 3px 0px 0px #000, -3px 0px 0px #000, 0px 3px 0px #000, 0px -3px 0px #000;
+}
+
+.box main .list_quire div i:nth-child(1) {
+    width: 190px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #f44975;
+    font-size: 14px;
+    text-align: center;
+    font-style: normal;
+    position: absolute;
+    color: #fff;
+    left: -67px;
+    top: 16px;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+}
+.box main .list_quire div img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto .15rem auto;
+    padding: 0;
+}
+.box main .list_quire .nav {
+    width: 95%;
+    height: 35px;
+    position: absolute;
+    margin: 0 auto 7px auto;
+    background-color: rgb(41, 71, 109);
+    font-size: 13.5px;
+    left: 2.5%;
+    bottom: -25px;
+    padding: 0;
+    border-radius: 50%;
+}
+.box main .list_quire .nav ul {
+    width: 90%;
+    height: 100%;
+    list-style-type: none;
+    margin: 0 auto;
+}
+.box main .list_quire .nav ul li {
+    width: 25%;
+    height: 35px;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    font-size: 15.5px;
+    float: left;
+}
+.box main .list_quire .nav ul li a {
+    color: #fff;
+}
+.box main .list_quire .nav ul li .cur{
+    color: #00ffff;
+    height: 35px;
+    border-bottom: 1px solid #00ffff;
+}
+.box main .contentY {
+    width: 100%;
+    height: auto;
+    margin: 30px auto 5px auto;
+}
+.box main .contentY .tab {
+    width: 95%;
+    height: 36px;
+    margin: 24px auto;
+    text-align: center;
+    clear: both;
+    background-color: #1ec6cc;
+    border-radius: 8.15rem;
+    font-size: 17px;
+    line-height: 36px;
+}
+.box main .contentY .tab div {
+    width: 50%;
+    height: 100%;
+    float: left;
+    color: #fff;
+}
+.box main .contentY .tab .selectA {
+    width: 50%;
+    height: 100%;
+    border-radius: 8.15rem;
+    color: #0af9fa;
+    background-color: #f44975;
+    box-shadow: 4px 0 0 #fd7497;
+}
+.box main .contentY .tab .selectB {
+    width: 50%;
+    height: 100%;
+    border-radius: 8.15rem;
+    color: #0af9fa;
+    background-color: #f44975;
+    box-shadow: -4px 0 0 #fd7497;
+}
+.box main .contentY .kuai {
+    width: 95%;
+    height: 180px;
+    max-height: 235px;
+    border-radius: 3px;
+    margin: 30px auto .45rem auto;
+    background-color: #fff;
+    position: relative;
+    clear: both;
+}
+.box main .contentY .kuai .header_photo {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: .0rem;
+    border: 2px solid #fff;
+}
+
+.box main .contentY .kuai .id {
+    height: 38px;
+    position: absolute;
+    left: 60px;
+    top: -18px;
+    line-height: 14px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.box main .contentY .kuai .id span {
+    color: #1ec6cc;
+}
+
+.box main .contentY .kuai .lef {
+    width: 10%;
+    height: 94%;
+    float: left;
+}
+
+.box main .contentY .kuai .lef .name {
+    width: 80%;
+    margin: 26px auto 10px auto;
+    font-size: 14px;
+    color: #222;
+}
+
+.box main .contentY .kuai .lef .beWrite {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #666;
+}
+
+.box main .contentY .kuai .middle {
+    width: 56%;
+    height: 154px;
+    margin: 13px auto;
+    padding: 0;
+    float: left;
+    overflow: hidden;
+    background: #f8f8f8;
+}
+
+.box main .contentY .kuai .middle img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.box main .contentY .kuai .right {
+    width: 30%;
+    height: 98%;
+    float: left;
+    margin: 0 auto auto 10px;
+    position: relative;
+}
+
+.box main .contentY .kuai .right p:nth-child(1) {
+    width: 95%;
+    height: 64px;
+    font-size: 16.5px;
+    text-align: center;
+    margin: 17px auto auto;
+    line-height: 30px;
+    color: #666;
+}
+
+.box main .contentY .kuai .right p:nth-child(2) {
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000;
+    text-align: center;
+    margin-top: .1rem;
+}
+.box main .contentY .kuai .right .vote {
+    width: 100%;
+    height: 34px;
+    font-size: 11px;
+    line-height: 24px;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    color: #000;
+    text-align: center;
+    margin-top: 12px;
+    clear: both;
+}
+.box main .contentY .kuai .right .vote div:nth-child(1)  {
+    width: 70%;
+    height: 24px;
+    line-height: 24px;
+    background-color: #fb7597;
+    box-shadow: 0 3px 0 #d42b56;
+    font-size: 13px;
+    margin: 0 auto;
+    -webkit-text-adjust: none;
+    color: #fff;
+    border-radius: 25px;
+}
+
+.box .recommend {
+    width: 56px;
+    height: 27px;
+    background-color: rgba(11, 221, 228, 0.9);
+    box-shadow: 0px 3px 0 #06b4b9;
+    position: fixed;
+    z-index: 0;
+    font-size: 13px;
+    color: #fff;
+    right: .3rem;
+    top: 33rem;
+    border-radius: 20px;
+    text-indent: 22px;
+    line-height: 27px;
+}
+
+.box .recommend p {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.box .recommend p a {
+    color:#fff;
+}
+.box .recommend p i {
+    width: 18px;
+    height: 26px;
+    position: absolute;
+    left: 5px;
+    background: url("../images/recommend.png") no-repeat;
+    background-position: 5px center;
+    background-size: 10px;
+}
+
+.box main .contentY .rank_kuai {
+    width: 95%;
+    height: 67px;
+    max-height: 75px;
+    border-radius: 3px;
+    margin: .0rem auto .3rem auto;
+    background-color: #fff;
+    position: relative;
+    clear: both;
+}
+.box main .contentY .rank_kuai .lef {
+    width: 15%;
+    height: 94%;
+    float: left;
+}
+.box main .contentY .rank_kuai .lef_bg {
+    text-align: center;
+    color: #f44975;
+    line-height: 53px;
+    font-size: 12px;
+    background: url("../images/rankicon.png") no-repeat;
+    background-size: 35px auto;
+    background-position: center;
+}
+.box main .contentY .rank_kuai .middle {
+    width: 33%;
+    height: 82%;
+    margin: 6px 0;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+.box main .contentY .rank_kuai .middle img {
+    width: 100%;
+    height: 100%;
+}
+.box main .contentY .rank_kuai .middle p {
+    width: 100%;
+    height: 15px;
+    font-size: 10px;
+    background-color: rgba(0,0,0,.5);
+    text-indent: 1em;
+    text-align: left;
+    line-height: 15px;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.box main .contentY .rank_kuai .right {
+    width: 48%;
+    height: 86%;
+    float: left;
+    margin: .15rem auto auto .12rem;
+    position: relative;
+}
+.box main .contentY .rank_kuai .right div:nth-child(1) {
+    width: 60%;
+    height: 42px;
+    line-height: 21px;
+    font-size: 12px;
+    color: #222;
+    text-align: left;
+    float: left;
+    margin: 7px auto auto 4px;
+}
+.box main .contentY .rank_kuai .right div:nth-child(2) {
+    width: 45px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    margin: 31px auto auto;
+    float: right;
+    background-color: #ff99b3;
+    box-shadow: 0 3px 0 #ce2953;
+    font-size: 10px;
+    color: #fff;
+    border-radius: 18px;
+}
+
+/*ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â½ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Ârecommend css*/
+.recommend {
+    width: 100%;
+    height: auto;
+    margin:  0 auto;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: #25293e;
+}
+.recommend .brief {
+    width: 97%;
+    font-size: 12px;
+    border-radius: 3px;
+    height: 34px;
+    line-height: 34px;
+    color: #ffffff;
+    margin: 8px auto;
+    background-color: #f73164;
+    text-indent: 1px;
+}
+
+.recommend .brief i {
+    width: 29px;
+    height: 34px;
+    background: url("../images/horn.svg") no-repeat;
+    background-size: 32px auto;
+    background-position: -2px  center;
+    display: block;
+    float: left;
+}
+.recommend .brief p {
+    width: 89%;
+    height: 24px;
+    display: block;
+    float: left;
+    text-size-adjust:none;
+    -webkit-text-size-adjust:none;
+    -o-text-size-adjust:none;
+    -moz-text-size-adjust:none;
+    font-size: 11px;
+    overflow: hidden;
+}
+
+.recommend .brief span {
+    color: #f4f049;
+}
+.recommend .module {
+    width:100%;
+    height :auto;
+    font-size: 15.5px;
+    text-align : left;
+    margin: 10px auto;
+    line-height: 39px;
+    color: #00ffff;
+    background-color :#2b3a4d;
+    clear: both;
+}
+.recommend .module .title {
+    width:100%;
+    height :30px;
+    line-height: 30px;
+    text-align: left;
+    text-indent: -11px;
+    clear: both;
+}
+.recommend .module .title .view {
+    width: 25px;
+    height : 30px;
+    display: inline-block;
+    background: url("../images/recomme.svg") no-repeat;
+    background-position: 1px center;
+    background-size: 13px auto;
+    float: left;
+}
+.recommend .module .name {
+    width:100%;
+    height :40px;
+    font-size:12.5px;
+    line-height: 40px;
+    clear: both;
+}
+.recommend .module .name span {
+    width:60px;
+    height :40px;
+    font-size: 13.5px;
+    line-height: 40px;
+    margin-left: 2px;
+}
+.recommend .module .name  input{
+    width: 77%;
+    height: 26px;
+    margin-left: 7px;
+    line-height: 26px;
+    color: #fff;
+    text-indent: 1em;
+    border-radius: 3px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.1);
+}
+.recommend .module .name textarea {
+    margin: 5px 0px 0px 10px;
+    width: 74%;
+    height: 74px;
+    float: left;
+    color: #fff;
+    line-height: 20px;
+    padding: 5px;
+    text-indent: 1em;
+    border-radius: 3px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background-color: rgba(255,255,255,0.1);
+}
+
+.recommend .module .name .described {
+    width: auto;
+    display: block;
+    height :40px;
+    float: left;
+    font-size: 13.5px;
+    line-height: 40px;
+}
+
+.recommend .module .name {
+    width: 100%;
+    height: auto;
+    font-size: 13.5px;
+    color: #fff;
+    margin: 5px auto;
+    clear: both;
+    overflow: hidden;
+}
+.recommend .module .picture {
+    width: 25px;
+    height : 30px;
+    display: inline-block;
+    background: url("../images/picture.svg") no-repeat;
+    background-position: 1px center;
+    background-size: 13px auto;
+    float: left;
+}
+.recommend .module .pciture_upload {
+    width: 60px;
+    height: auto;
+    float: left;
+    margin: 5px auto auto 5px;
+    position:relative;
+}
+
+.recommend .module .pciture_upload img {
+    width: 100%;
+    height: auto;
+}
+.recommend .module .pciture_upload i {
+    width: 12px;
+    height: 12px;
+    display: block;
+    position:absolute;
+    top:0;
+    right:0;
+    background: rgba(43,58,77,.7) url("../images/xx.svg") no-repeat;
+    background-position: center;
+    background-size: 10px;
+}
+.recommend .module .addPhoto {
+    width: 43px;
+    height: 43px;
+    float: left;
+    border: solid 1px #797979;
+    display: block;
+    position: relative;
+    border-radius: 3px;
+    margin: 14px 3px auto;
+    background: rgba(43,58,77,.7) url(../images/addPhoto.svg) no-repeat;
+    background-position: center;
+    background-size: 25px;
+}
+.recommend .module .addPhoto input {
+    opacity:0;
+    height :100%;
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.recommend .module .person_info {
+    width: 25px;
+    height: 30px;
+    display: inline-block;
+    background: url(../images/person_info.svg) no-repeat;
+    background-position: 2px 9px;
+    background-size: 12px;
+    float: left;
+}
+.recommend .btn {
+    width: 40%;
+    height:32px;
+    line-height:32px;
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    border: solid 1px #8cf1f5;
+    border-radius: 16px;
+    margin: 0px auto 10px auto;
+    text-align: center;
+    background-color: #1ec6cc;
+}
+.recommend .error {
+    width: 96%;
+    line-height:12px;
+    text-indent :1em;
+    color: red;
+    font-size: 12px;
+    margin: 10px auto 10px auto;
+    text-align: left;
+}
+.recommend .rm_recommend {
+    width: 100%;
+    height :100%;
+    color: #222;
+    font-size: 12px;
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    margin: 0px auto;
+    text-align: left;
+}
+.recommend .rm_recommend .bg {
+    width: 100%;
+    height :100%;
+    position: absolute;
+    top:0;
+    left:0;
+    margin: 0px auto;
+    text-align: left;
+    background: rgba(0,0,0,.7);
+}
+.recommend .rm_recommend .content {
+    width: 100%;
+    height :140px;
+    position: absolute;
+    bottom:0;
+    left:0;
+    margin: -110px auto auto;
+    background-color: #fff;
+    z-index: 12;
+}
+.recommend .rm_recommend .content .tit {
+    width: 100%;
+    height :90px;
+    line-height: 90px;
+    text-align: center;
+}
+.recommend .rm_recommend .content .makeSure {
+    width: 50%;
+    font-size: 12px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    height: 50px;
+    float: left;
+    background-color: #f73164;
+}
+.recommend .rm_recommend .content .cancel {
+    width: 50%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #f6f5f7;
+    float: left;
+    text-align: center;
+    z-index: 12;
+}
+
+
+
+/*writeRule .css*/
+.writeRule {
+    width:100%;
+    height: 100%;
+}
+.writeRule .title {
+    width: 90%;
+    margin: 0 auto;
+    height: 80px;
+    line-height: 80px;
+    font-size: 16.5px;
+    margin-top: 10px;
+    border-bottom: 1px dashed #848f92;
+}
+.writeRule .title div {
+    width: 140px;
+    height: 80px;
+    line-height: 82px;
+    text-align: center;
+    text-indent: 21px;
+    margin: 0 auto;
+    background :url("../images/police.svg") no-repeat;
+    background-position: 3px center;
+    background-size: 22px auto;
+    color:#00ffff;
+    border-bottom: 1px dashed #848f92;
+}
+.writeRule .rule {
+    width: 90%;
+    line-height: 21px;
+    font-size: 13px;
+    margin: 14px auto 14px;
+    text-align: left;
+    text-indent: 3em;
+    color: red;
+    background :url("../images/prohibit.svg") no-repeat;
+    background-position: 20px 4px;
+    background-size: 12px auto;
+}
+.writeRule p span {
+    color:#b2f6f6;
+}
+.writeRule p {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 28px;
+    font-size: 15px;
+    color: #fff;
+}
+
+
+/*prizes css*/
+.prizes {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 15.4px;
+    color: #fff;
+}
+.prizes p{
+    width: 100%;
+    line-height: 30px;
+    margin: 40px auto;
+    text-indent:2em;
+}
+.prizes p span {
+    color: #f73164;
+}
+
+
+
+/*reserve.Css*/
+.reserve {
+    width: 100%;
+    height: auto;
+    font-size: 12px;
+    color: #fff;
+}
+.reserve .up_module, .reserve .up_module .tit .reserve .up_module .selection_s {
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    color: #fff;
+    background-color: rgba(212, 204, 116, 0.1);
+}
+
+.reserve .up_module .tit {
+    color: #f4cc74;
+    width: 52%;
+    height: auto;
+    margin: 30px auto auto;
+    font-size: 16px;
+    line-height: 25px;
+}
+.reserve .up_module .nei {
+    padding-bottom: 0;
+}
+.reserve:after, .reserve .up_module .selection_s:after {
+    clear: both;
+}
+.reserve .up_module .selection_s, .reserve .up_module .selection_s p {
+    width: 100%;
+    height: 35px;
+    clear: both;
+    margin: 5px auto auto;
+    border-bottom: dashed 0.5px rgba(235, 209, 136, 0.44);
+    overflow: hidden;
+}
+.reserve .up_module .selection_s p {
+    border: none;
+    width: 97%;
+}
+.reserve .up_module .selection_s p span em{
+    color: rgba(234, 201, 130, 0.8);
+    font-style: normal;
+}
+.reserve .up_module .selection_s p span:nth-child(1) {
+    width: auto;
+    float: left;
+    display: block;
+    height: 34px;
+    line-height: 34px;
+}
+.reserve .up_module .selection_s p span:nth-child(2) {
+    width: 14px;
+    height: 14px;
+    position: relative;
+    margin-top: 0px;
+    float: right;
+    display: block;
+}
+.reserve .up_module .selection_s p i{
+    width: 0px;
+    height: 0px;
+    top: 17px;
+    left: 7px;
+    z-index: 11;
+    display: block;
+    position: absolute;
+    background-color: #ffd900;
+}
+.reserve .up_module .selection_s p span input {
+    width: 14px;
+    height: 14px;
+    float: right;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 10px;
+    display: block;
+    position: relative;
+}
+input[type=checkbox]{
+    -webkit-appearance:none;
+    background-color: #5a5852;
+    border-radius:50%;
+}
+input[type=checkbox].true{
+    -webkit-appearance:none;
+    width: 9px;
+    height: 9px;
+    border:4px solid #5a5852;
+    background-color: #5a5852;
+    border-radius:50%;
+}
+.reserve .module {
+    width: 100%;
+    height: auto;
+    font-size: 13px;
+    text-align: left;
+    margin: 10px auto;
+    line-height: 39px;
+    color: #f4cc74;
+    background-color: rgba(212, 204, 116, 0.1);
+    clear: both;
+}
+.reserve .module .title {
+    color: #f4cc74;
+    width: 120px;
+    height: 25px;
+    margin-top: 17px;
+    font-size: 16px;
+    text-indent: 24px;
+    line-height: 25px;
+}
+.reserve .module .spread {
+    background: url(../images/spread.svg) no-repeat;
+    background-position: 4px center;
+    background-size: 19px auto;
+}
+
+.reserve .module .contract_us {
+    background: url(../images/contract_us.svg) no-repeat;
+    background-position: 5px center;
+    background-size: 15px auto;
+}
+.reserve .module .name {
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    color: #fff;
+    margin: 5px auto;
+    clear: both;
+    overflow: hidden;
+}
+.reserve .module .name .described {
+    width: auto;
+    display: block;
+    height: 40px;
+    float: left;
+    font-size: 11px;
+    line-height: 40px;
+}
+.reserve .module .name .describes {
+    margin: 5px 0px 0px 4px;
+    width: 94%;
+    height: 74px;
+    float: left;
+    font-size: 14px;
+    color: #fff;
+    line-height: 20px;
+    padding: 5px;
+    text-indent: 1em;
+    resize: none;
+    border-radius: 3px;
+    border: 1px solid rgba(235, 209, 136, 0.37);
+    background-color: rgba(255,255,255,0.1);
+}
+
+.reserve .module .name span {
+    width: 55px;
+    height: 40px;
+    display: block;
+    float: left;
+    font-size: 13.5px;
+    line-height: 26px;
+    margin-left: 2px;
+}
+.reserve .module .name input {
+    width: 80%;
+    height: 26px;
+    margin-left: 7px;
+    line-height: 26px;
+    float: left;
+    color: #fff;
+    font-size: 14px;
+    text-indent: 1em;
+    border-radius: 3px;
+    border: 1px solid rgba(235, 209, 136, 0.41);
+    background-color: rgba(255,255,255,0.1);
+}
+.reserve .error {
+    width: 96%;
+    line-height: 12px;
+    text-indent: 1em;
+    color: red;
+    font-size: 12px;
+    margin: 10px auto 10px auto;
+    text-align: left;
+}
+.reserve .btn {
+    width: 55%;
+    height: auto;
+    line-height: 32px;
+    color: #fff;
+    font-size: 14px;
+    display: block;
+    border: none;
+    margin: 0px auto 15px auto;
+    text-align: center;
+    background: none;
+    outline: none;
+}
+
+
+
+/*neir.css*/
+.artical {
+    width: 100%;
+    height: auto;
+    margin: -6px auto;
+    font-size: 12px;
+    color: #fff;
+    position: relative;
+}
+
+.artical .header {
+    width: 100%;
+    height: 91px;
+    margin: 0 auto;
+    background-color: #13172d;
+}
+.artical .header .tit {
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+    line-height: 71px;
+    text-align: center;
+    margin: 0 auto;
+    color: #00ffff;
+}
+.artical .header .info {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    clear: both;
+    border-bottom: 1px dashed #777;
+}
+.artical .header .info span {
+    float: left;
+    height: 30px;
+    width: auto;
+    color: #fff;
+}
+.artical .header .info span.user {
+    text-indent: 14px;
+    background: url(../images/user.svg) no-repeat;
+    background-position: -2px center;
+    background-size: 18px auto;
+}
+
+.artical .header .info span:nth-child(2) {
+    color: #c7c7c7;
+    -webkit-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+    font-size: 13px;
+    line-height: 33px;
+    text-indent: 14px;
+    background: url(../images/date.svg) no-repeat;
+    background-position: 0px center;
+    background-size: 11px auto;
+}
+.artical .header .info span em {
+    color: #00efef;
+    font-size: 14px;
+    font-style: normal;
+}
+.artical .main {
+    width:100%;
+    height:auto;
+    padding-bottom: 40px;
+}
+.artical .main  .jianjie{
+    width: 96%;
+    height:auto;
+    font-size: 15px;
+    color: #fbffff;
+    background-color: #343956;
+    margin: 13px auto 3px;
+    padding: 2%;
+    -webkit-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+    line-height: 22px;
+}
+.artical .main .jianjie span {
+    color: #b75252;
+    -webkit-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+    font-size: 15px;
+}
+
+.artical .main p {
+    line-height: 25px;
+    text-indent: 2em;
+}
+.artical .main img {
+    width:100%;
+    height: auto;
+    margin: 6px auto 0px;
+}
+.artical .footer {
+    width: 100%;
+    height: 37px;
+    line-height: 37px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #13172d;
+}
+.artical .footer span:nth-child(1){
+    width: auto;
+    height:30px;
+    float: right;
+    margin-right: 15px;
+    -webkit-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+    font-size: 14px;
+    text-indent: 14px;
+    background: url(../images/eye.svg) no-repeat;
+    background-position: -3px 10px;
+    background-size: 17px auto;
+}
+.artical .footer span:nth-child(2){
+    width: auto;
+    height:30px;
+    float: right;
+    margin-right: 38px;
+    -webkit-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+    font-size: 14px;
+    text-indent: 14px;
+    background: url(../images/vote.svg) no-repeat;
+    background-position: 0px 10px;
+    background-size: 13px auto;
+}
+.artical .footer span em {
+    font-style: normal;
+    color: #0bfff2;
+    font-size: 15px;
+}
+.neir_pic {
+    width: 100%;
+    height: auto;
+    clear: both;
+    padding-bottom: 40px;
+    overflow: hidden;
+}
+.neir_pic .banner,.neir_pic .banner img {
+    width: 100%;
+    height: 248px;
+    min-height: 175px;
+}
+
+.neir_pic .pic_show {
+    width: 100%;
+    height: auto;
+    clear: both;
+}
+.neir_pic .pic_show .pic {
+    width: 47%;
+    margin: 8px auto auto 2%;
+    height: 106px;
+    box-shadow: 1.5px 3px 1px #00020c;
+    float: left;
+    position: relative;
+}
+.neir_pic .pic_show .pic img {
+    width: 100%;
+    height: auto;
+}
+.neir_pic .pic_show .pic div {
+    width: 100%;
+    height: auto;
+    background-color: rgba(255,255,255,.6);
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+.neir_pic .pic_show .pic div p {
+    font-size: 11px;
+    position:relative;
+}
+.neir_pic .pic_show .pic div i {
+    width: 30px;
+    height: 21px;
+    text-align: center;
+    background-color: rgba(255,255,255,.6);
+    border-radius: 25px 25px 0 0;
+    border-bottom: none;
+    position: absolute;
+    left: 50%;
+    top: -26px;
+    margin-left: -15px;
+    z-index: 32;
+}
+.neir_pic .pic_show .pic div p span {
+    width: 96%;
+    height: auto;
+    display: block;
+    text-align: center;
+    margin: 5px auto;
+}

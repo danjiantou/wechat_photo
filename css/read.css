@@ -1,0 +1,178 @@
+@charset "UTF-8";
+html, body {
+	margin: 0;
+	width: 100%;
+	font-weight: 400;
+	font-family: arial;
+	color: #FFF;
+	text-align: left;
+	background-color: #1f1f1f;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body, fieldset, img, iframe, abbr, button {
+	border: 0;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden
+}
+a, a:hover {
+	color: #434343;
+	text-decoration: none
+}
+.vote-Mask {
+	display: none;
+	position: fixed;
+	z-index: 9998;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.8);
+}
+
+.vote-ok {
+	position: relative;
+	width: 5rem;
+	height: 6rem;
+	margin: 3rem auto 0;
+	background-image: url(../images/vote-ok.png);
+	background-repeat: no-repeat;
+	background-size: 100%
+}
+
+.vote-Mask .vote-ok .close {
+	position: absolute;
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	top: 0;
+	right: 0
+}
+
+.vote-Mask img {
+	position: relative;
+	margin: 4.5rem 0 0 1rem;
+	width: 3rem
+}
+
+.read-adv {
+	display: block;
+	position: relative;
+	float: left;
+	width: 100%;
+	overflow: hidden
+}
+.read-adv img {
+	width: 100%
+}
+.content {
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+	padding-bottom: 1.2rem
+}
+.read-title {
+	float: left;
+	line-height: 1rem;
+	margin-top: .23rem;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	color: #CCC;
+	font-size: .45rem;
+}
+
+.read-reason {
+	box-sizing: border-box;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	text-align: left;
+	color: #B3B3B3;
+	font-size: .35rem;
+	padding: .2rem;
+	position: relative;
+}
+.read-reason:after		 {
+	content: ' ';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #354f5b;
+	-webkit-transform: scaleY(.5);
+	transform: scaleY(.5);
+}
+.read-content {
+	box-sizing: border-box;
+	float: left;
+	width: 100%;
+	line-height: .55rem;
+	overflow: hidden;
+	text-align: left;
+	color: #B3B3B3;
+	font-size: .35rem;
+	font-weight: 0;
+	padding: .2rem
+}
+
+.bottom {
+	display: block;
+	position: fixed;
+	z-index: 100;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1rem;
+	background-color: #171b21;
+	text-align: left;
+	color: #4c525c;
+	font-size: .3rem;
+	line-height: 1rem
+}
+
+.bottom:after{
+  content: '  ';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #354f5b;
+  -webkit-transform: scaleY(.5);
+  transform:scaleY(.5);
+}
+
+.bottom img {
+	float: left;
+	width: .4rem;
+	margin: .27rem .1rem
+}
+
+.bottom div {
+	float: left
+}
+
+.bottom span {
+	float: left;
+	color: #962727
+}
+
+.bottom a {
+	float: right;
+	width: 2rem;
+	height: 100%;
+	background-image: url(../images/vote-btn.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}

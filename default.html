@@ -1,0 +1,486 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="description" content="世界摄影（旅游）大会暨第五届国家摄影大典" />
+<title>国家摄影大典</title>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="css/jquery.fullPage.css" rel="stylesheet" type="text/css">
+<link href="css/swiper.min.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.fullPage.js" type="text/javascript"></script>
+<script src="js/swiper.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function(){
+		$('html').css('font-size', document.documentElement.clientHeight / document.documentElement.clientWidth < 1.5 ? document.documentElement.clientHeight / 603 * 312.5 + '%' : document.documentElement.clientWidth / 375 * 312.5 + '%');
+		
+		var menuList = new Swiper('.menuList-swiper', {
+			slidesPerView: 3,
+			freeMode: true
+		});
+		
+		
+		$('#fullscreenPage').fullpage({
+			anchors:['main', 'profile', 'schedule', 'enroll', 'selection', 'live', 'periodical', 'partner'],
+			verticalCentered:false,
+			loopHorizontal:false,
+			afterRender: function(){
+				$('#mask, .fp-controlArrow').remove();
+			},
+			afterSlideLoad: function(anchorLink, index, slideIndex, direction){
+				$('[data-anchor="' + anchorLink + '"] .menuList-swiper a').removeClass('cur');
+				$('[data-anchor="' + anchorLink + '"] .menuList-swiper a:eq(' + slideIndex + ')').addClass('cur');
+				menuList.slideTo(slideIndex, 1000, false);
+			}
+		});
+		
+		new Swiper('.enroll1-swiper', {
+			onSlideChangeEnd: function(swiper) {
+				$('.enroll-pointer .pointerC i', $('.enroll1-swiper').parent()).removeClass('checked');
+				$('.enroll-pointer .pointerC i:eq('+swiper.activeIndex+')', $('.enroll1-swiper').parent()).addClass('checked');
+			}
+		});
+		new Swiper('.enroll2-swiper', {
+			onSlideChangeEnd: function(swiper) {
+				$('.enroll-pointer .pointerC i', $('.enroll2-swiper').parent()).removeClass('checked');
+				$('.enroll-pointer .pointerC i:eq('+swiper.activeIndex+')', $('.enroll2-swiper').parent()).addClass('checked');
+			}
+		});
+		new Swiper('.enroll3-swiper', {
+			onSlideChangeEnd: function(swiper) {
+				$('.enroll-pointer .pointerC i', $('.enroll3-swiper').parent()).removeClass('checked');
+				$('.enroll-pointer .pointerC i:eq('+swiper.activeIndex+')', $('.enroll3-swiper').parent()).addClass('checked');
+			}
+		});
+		new Swiper('.enroll4-swiper', {
+			onSlideChangeEnd: function(swiper) {
+				$('.enroll-pointer .pointerC i', $('.enroll4-swiper').parent()).removeClass('checked');
+				$('.enroll-pointer .pointerC i:eq('+swiper.activeIndex+')', $('.enroll4-swiper').parent()).addClass('checked');
+			}
+		});
+		
+		new Swiper('.live-ADV-swiper', {
+			autoplay: 5000
+		});
+		new Swiper('.live-news-swiper', {
+			onSlideChangeEnd: function(swiper) {
+				$('[data-anchor="live"] .pointer .pointerC i').removeClass('checked');
+				$('[data-anchor="live"] .pointer .pointerC i:eq('+swiper.activeIndex+')').addClass('checked');
+			}
+		});
+		
+		new Swiper('.partner-swiper', {
+			onSlideChangeEnd: function(swiper) {
+				$('[data-anchor="partner"] .pointer .pointerC i').removeClass('checked');
+				$('[data-anchor="partner"] .pointer .pointerC i:eq('+swiper.activeIndex+')').addClass('checked');
+			}
+		});
+	});
+</script>
+</head>
+<body>
+<!--<div id="mask">加载中</div>-->
+<section id="fullscreenPage"> 
+  <!--首页-->
+  <article class="section mainPage active">
+    <div class="mainPage-background mainPage-backgroundPos scale2"></div>
+    <div class="mainPage-title mainPage-titlePos scale1"></div>
+    <div class="mainPage-title2 mainPage-title2Pop botMove"></div>
+    <a href="#profile" class="menuBut menu1" target="_self"><img src="images/main-menu1.png" /></a> <a href="#selection" class="menuBut menu2" target="_self"><img src="images/main-menu2.png" /></a> <a href="#enroll" class="menuBut menu3" target="_self"><img src="images/main-menu3.png" /></a> <a href="#periodical" class="menuBut menu4" target="_self"><img src="images/main-menu4.png" /></a> <a href="#profile" target="_self">
+    <div class="arrow"> <i></i> <i></i> <i></i> </div>
+    </a> </article>
+  <!--大会简介-->
+  <article class="section">
+    <div class="slide-title"> <img src="images/profile-title.png"> </div>
+    <div class="contents">
+      <p>1600人相聚，影像时代的影像盛典</p>
+      <p>中外政府官员、摄影家、金融家、企业家和顶级文旅产业投资老总齐聚</p>
+      <p>法国市长不远万里来到中国为“达盖尔奖”获得者颁奖</p>
+      <p>数十场摄影大赛现场颁奖礼</p>
+      <p>近距离与中外顶级摄影大师对话</p>
+      <p>20城市市长现场精彩对话20国外交官</p>
+      <p>中国摄影人现场对话外国摄影大师</p>
+      <p>20位顶级文旅产业投资老总现场对话20城市市长</p>
+      <p>20位明星助阵现场节目表演精彩纷呈</p>
+    </div>
+
+    <a href="#schedule" target="_self">
+    <div class="arrow"> <i></i> <i></i> <i></i> </div>
+    </a> </article>
+  <!--会议日程-->
+  <article class="section">
+    <div class="slide-title"><img src="images/schedule-title.png"></div>
+    <div class="flow-cont">
+      <div class="flow-box flow-box1">
+        <div class="time">13:00</div>
+        <p class="text">开幕式<br>
+          <span>专家演讲</span><br>
+          <span>达盖尔奖颁奖礼</span><br>
+          <span>大型歌舞表演</span></p>
+      </div>
+      <div class="flow-box flow-box2">
+        <div class="time">14:00</div>
+        <p class="text">对话摄影<br>
+          <span>20位顶级摄影大师巅峰对话</span><br>
+          <span>大型歌舞表演</span></p>
+      </div>
+      <div class="flow-box flow-box3">
+        <div class="time">15:00</div>
+        <p class="text"> 对话旅游<br>
+          <span>十大文旅集团投资老总巅峰</span><br>
+          <span>对话旅游市长</span><br>
+          <span>十位投资专家对话中国</span><br>
+          <span>旅游古镇</span><br>
+          <span>大型歌舞表演</span></p>
+      </div>
+      <div class="flow-box flow-box4">
+        <div class="time">16:00</div>
+        <p class="text"> 颁奖典礼<br>
+          <span>中国十大旅游城市</span><br>
+          <span>中国十大特色小镇</span><br>
+          <span>中国十大旅游圣地</span><br>
+          <span>2016中国摄影年度人物</span><br>
+          <span>香巴拉国际摄影大赛</span><br>
+          <span>多彩中国国际摄影大赛等20个奖项</span> </p>
+      </div>
+    </div>
+    <a href="#enroll" target="_self">
+    <div class="arrow"> <i></i> <i></i> <i></i> </div>
+    </a> </article>
+  <!--报名通道-->
+  <article class="section">
+    <div class="slide-title"> <img src="images/enroll-title.png"> </div>
+    <div class="log"><img src="images/enroll-logo.png" alt=""></div>
+    <div class="aniu">
+      <a href="#"><img src="images/enroll-btn1.png" alt=""></a>
+      <a href="#"><img src="images/enroll-btn2.png" alt=""></a>
+    </div>
+    <a href="#selection" target="_self">
+    <div class="arrow"> <i></i> <i></i> <i></i> </div>
+    </a>
+  </article>
+
+  <!--评选项目-->
+  <article class="section" style="position: relative">
+    <div class="slide-title2"> <img src="images/city-title.png"> </div>
+    <div class="menuList-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href="#selection/0" target="_self" class="cur">历史文化名城</a></div>
+        <div class="swiper-slide"><a href="#selection/1" target="_self">影像世界遗产</a></div>
+        <div class="swiper-slide"><a href="#selection/2" target="_self">摄影旅游城市</a></div>
+        <div class="swiper-slide"><a href="#selection/3" target="_self">生态宜居城市</a></div>
+        <div class="swiper-slide"><a href="#selection/4" target="_self">特色小镇</a></div>
+        <div class="swiper-slide"><a href="#selection/5" target="_self">红色旅游景区</a></div>
+        <div class="swiper-slide"><a href="#selection/6" target="_self">摄影旅游景区</a></div>
+        <div class="swiper-slide"><a href="#selection/7" target="_self">摄影旅游古镇</a></div>
+        <i class="rewordRight"></i>
+      </div>
+    </div>
+    <article class="slide"> <a href="javascript:alert('改变排序模式');" class="button"><span class="sort">排序:排名↓</span></a>
+      <div class="enroll1-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide enroll-list">
+            <li class="enrollLi">
+              <div class="enrollBox"> <a href="http://weishoot.com" target="_blank">
+                <div class="imgBox" style="background-image: url(http://img1.weishoot.com/Selection/16/EF2A1CB732C9B16A/01485215642.JPG)">
+                  <div class="background"></div>
+                  <span>开封</span></div>
+                </a> <span class="data">票数:345982</span><a href="javascript:alert('执行投票');" class="button">投票</a> </div>
+            </li>
+            <li class="enrollLi">
+              <div class="enrollBox"> <a href="http://weishoot.com" target="_blank">
+                <div class="imgBox" style="background-image: url(http://img1.weishoot.com/Selection/16/EF2A1CB732C9B16A/01485214267.JPG)">
+                  <div class="background"></div>
+                  <span>杭州</span></div>
+                </a> <span class="data">票数:45634</span><a href="javascript:alert('执行投票');" class="button">投票</a> </div>
+            </li>
+            <li class="enrollLi">
+              <div class="enrollBox"> <a href="http://weishoot.com" target="_blank">
+                <div class="imgBox" style="background-image: url(http://img1.weishoot.com/Selection/16/EF2A1CB732C9B16A/01485217248.JPG)">
+                  <div class="background"></div>
+                  <span>拉萨</span></div>
+                </a> <span class="data">票数:546</span><a href="javascript:alert('执行投票');" class="button">投票</a> </div>
+            </li>
+            <li class="enrollLi">
+              <div class="enrollBox"> <a href="http://weishoot.com" target="_blank">
+                <div class="imgBox" style="background-image: url(http://img1.weishoot.com/Selection/16/EF2A1CB732C9B16A/01485164474.JPG)">
+                  <div class="background"></div>
+                  <span>西安</span></div>
+                </a> <span class="data">票数:6983</span><a href="javascript:alert('执行投票');" class="button">投票</a> </div>
+            </li>
+          </div>
+          <div class="swiper-slide enroll-list">
+            <li class="enrollLi">
+              <div class="enrollBox"> <a href="http://weishoot.com" target="_blank">
+                <div class="imgBox" style="background-image: url(http://img1.weishoot.com/Selection/16/EF2A1CB732C9B16A/01485224797.JPG)">
+                  <div class="background"></div>
+                  <span>大理</span></div>
+                </a> <span class="data">票数:345982</span><a href="javascript:alert('执行投票');" class="button">投票</a> </div>
+            </li>
+            <li class="enrollLi">
+              <div class="enrollBox"> <a href="http://weishoot.com" target="_blank">
+                <div class="imgBox" style="background-image: url(http://img1.weishoot.com/Selection/16/EF2A1CB732C9B16A/01485569356.JPG)">
+                  <div class="background"></div>
+                  <span>上海</span></div>
+                </a> <span class="data">票数:45634</span><a href="javascript:alert('执行投票');" class="button">投票</a> </div>
+            </li>
+            <li class="enrollLi">
+              <div class="enrollBox"> <a href="http://weishoot.com" target="_blank">
+                <div class="imgBox" style="background-image: url(http://img1.weishoot.com/Selection/16/EF2A1CB732C9B16A/01485218000.JPG)">
+                  <div class="background"></div>
+                  <span>广州</span></div>
+                </a> <span class="data">票数:546</span><a href="javascript:alert('执行投票');" class="button">投票</a> </div>
+            </li>
+            <li class="enrollLi">
+              <div class="enrollBox"> <a href="http://weishoot.com" target="_blank">
+                <div class="imgBox" style="background-image: url(http://img1.weishoot.com/Selection/16/EF2A1CB732C9B16A/01485215138.JPG)">
+                  <div class="background"></div>
+                  <span>南京</span></div>
+                </a> <span class="data">票数:6983</span><a href="javascript:alert('执行投票');" class="button">投票</a> </div>
+            </li>
+          </div>
+          <div class="swiper-slide enroll-list">
+            <li class="enrollLi">
+              <div class="enrollBox"> <a href="http://weishoot.com" target="_blank">
+                <div class="imgBox" style="background-image: url(http://img1.weishoot.com/Selection/16/EF2A1CB732C9B16A/01485276063.JPG)">
+                  <div class="background"></div>
+                  <span>大同</span></div>
+                </a> <span class="data">票数:345982</span><a href="javascript:alert('执行投票');" class="button">投票</a> </div>
+            </li>
+            <li class="enrollLi">
+              <div class="enrollBox"> <a href="http://weishoot.com" target="_blank">
+                <div class="imgBox" style="background-image: url(http://img1.weishoot.com/Selection/16/EF2A1CB732C9B16A/01485218394.JPG)">
+                  <div class="background"></div>
+                  <span>苏州</span></div>
+                </a> <span class="data">票数:45634</span><a href="javascript:alert('执行投票');" class="button">投票</a> </div>
+            </li>
+          </div>
+        </div>
+      </div>
+      <div class="enroll-pointer">
+        <div class="pointerC"> <i class="checked"></i> <i></i> <i></i> </div>
+      </div>
+    </article>
+    <script>
+      $('.sort').click(function (e) {
+          e = e || event;
+          if(e.stopPropagation){
+              e.stopPropagation();
+          }else {
+              e.cancelBubble();
+          }
+          sort();
+      })
+      function sort(a,b) {
+          var dataV = $('.swiper-slide').find('.data').html().substring(3);
+              setLi = $('.swiper-slide li').setAttribute("data-value",dataV);
+              setLiValue = getAttribute('data-value');
+              console.log(setLiValue);
+          var aValue = $(a).setLi,
+              bValue = $(b).setLi;
+          if(parseInt(aValue) > bValue){
+              return 1;
+          }else return -1;
+      }
+    </script>
+    <!--<script>
+      var $sort = $('.slide').find('.sort'),
+          $swiperSlide = $('.enroll1-swiper').find('.swiper-slide'),
+          $enrollLi = $swiperSlide.find('.enrollLi'),
+          $data = $swiperSlide.find('.enrollLi').find('.data');
+      $sort.click(function () {
+          liSort();
+      })
+      console.log($data);
+
+      function liSort(n){
+          //1.类数组转数组
+          var ary=utils.makeArray($enrollLi);
+          console.log(ary);
+          //2.sort排序
+          console.log($($data).html().substring(3));
+          var val = $($data).html().substring(3);
+          ary.sort(function(a,b){
+              a= a.val;
+              b= b.val;
+              return (b-a);
+          });
+          //3.重新插入页面
+          var frg=document.createDocumentFragment();
+          for(var i=0; i<ary.length; i++){
+              frg.append(ary[i]);
+          }
+          $swiperSlide.append(frg);
+      }
+      function liSort() {
+          var str = [],
+              newStr = [];
+          for(var i=0; i<$data.length; i++){
+              var val = JSON.parse($($data[i]).html().substring(3));
+              str.push(val);
+              str.sort();
+              if(str[i]===val){
+
+              }
+          };
+          console.log(str)
+      }
+    </script>-->
+    <article class="slide">
+      <div class="enroll2-swiper" style="height: 8.4rem">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">2-1</div>
+          <div class="swiper-slide">2-2</div>
+        </div>
+      </div>
+      <div class="enroll-pointer">
+        <div class="pointerC"> <i class="checked"></i> <i></i> </div>
+      </div>
+    </article>
+    <article class="slide">
+      <div class="enroll3-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">3-1</div>
+        </div>
+      </div>
+      <div class="enroll-pointer">
+        <div class="pointerC"> <i class="checked"></i> </div>
+      </div>
+    </article>
+    <article class="slide">
+      <div class="enroll3-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">4-1</div>
+        </div>
+      </div>
+      <div class="enroll-pointer">
+        <div class="pointerC"> <i class="checked"></i> </div>
+      </div>
+    </article>
+    <article class="slide">
+      <div class="enroll3-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">5-1</div>
+        </div>
+      </div>
+      <div class="enroll-pointer">
+        <div class="pointerC"> <i class="checked"></i> </div>
+      </div>
+    </article>
+    <article class="slide">
+      <div class="enroll3-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">6-1</div>
+        </div>
+      </div>
+      <div class="enroll-pointer">
+        <div class="pointerC"> <i class="checked"></i> </div>
+      </div>
+    </article>
+    <article class="slide">
+      <div class="enroll3-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">7-1</div>
+        </div>
+      </div>
+      <div class="enroll-pointer">
+        <div class="pointerC"> <i class="checked"></i> </div>
+      </div>
+    </article>
+    <article class="slide">
+      <div class="enroll4-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">8-1</div>
+          <div class="swiper-slide">8-2</div>
+          <div class="swiper-slide">8-3</div>
+          <div class="swiper-slide">8-4</div>
+          <div class="swiper-slide">8-5</div>
+        </div>
+      </div>
+      <div class="enroll-pointer">
+        <div class="pointerC"> <i class="checked"></i> <i></i> <i></i> <i></i> <i></i> </div>
+      </div>
+    </article>
+
+    <a href="#live" target="_self">
+    <div class="arrow"> <i></i> <i></i> <i></i> </div>
+    </a>
+    <div class="twoBtnA">
+      <a href="recommend-title.html"><img src="images/recommend.png" alt=""></a>
+    </div>
+    <div class="twoBtnB">
+      <a href="#"><img src="images/rule.png" alt=""></a>
+    </div>
+  </article>
+  <!--现场直播-->
+  <article class="section">
+    <div class="live-ADV-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><a href="http://weishoot.com"><img class="img-responsive" src="images/temp/16.png"/></a></div>
+        <div class="swiper-slide"><a href="http://weishoot.com"><img class="img-responsive" src="images/temp/17.png"/></a></div>
+      </div>
+    </div>
+    <div class="slide-title"> <img src="images/live-title.png"> </div>
+    <div class="live-news-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">国家摄影大典，摄影界的思想盛宴</span><span class="time">3-31</span></a> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">云南新平民族影像基地成立暨“色云南新平民族影像基地成立暨“色</span><span class="time">3-31</span></a> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">摄影爱好者参观国家摄影图片展</span><span class="time">3-28</span></a> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">领导为获奖者颁奖</span><span class="time">3-15</span></a> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">著名书法家为大典献墨宝</span><span class="time">3-07</span></a> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">云南新平民族影像基地成立暨“色云南新平民族影像基地成立暨“色</span><span class="time">3-31</span></a> </div>
+        <div class="swiper-slide"> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">国家摄影大典，摄影界的思想盛宴</span><span class="time">3-31</span></a> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">云南新平民族影像基地成立暨“色云南新平民族影像基地成立暨“色</span><span class="time">3-31</span></a> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">摄影爱好者参观国家摄影图片展</span><span class="time">3-28</span></a> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">领导为获奖者颁奖</span><span class="time">3-15</span></a> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">著名书法家为大典献墨宝</span><span class="time">3-07</span></a> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">云南新平民族影像基地成立暨“色云南新平民族影像基地成立暨“色</span><span class="time">3-31</span></a> </div>
+        <div class="swiper-slide"> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">国家摄影大典，摄影界的思想盛宴</span><span class="time">3-31</span></a> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">云南新平民族影像基地成立暨“色云南新平民族影像基地成立暨“色</span><span class="time">3-31</span></a> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">摄影爱好者参观国家摄影图片展</span><span class="time">3-28</span></a> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">领导为获奖者颁奖</span><span class="time">3-15</span></a> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">著名书法家为大典献墨宝</span><span class="time">3-07</span></a> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">云南新平民族影像基地成立暨“色云南新平民族影像基地成立暨“色</span><span class="time">3-31</span></a> </div>
+        <div class="swiper-slide"> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">国家摄影大典，摄影界的思想盛宴</span><span class="time">3-31</span></a> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">云南新平民族影像基地成立暨“色云南新平民族影像基地成立暨“色</span><span class="time">3-31</span></a> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">摄影爱好者参观国家摄影图片展</span><span class="time">3-28</span></a> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">领导为获奖者颁奖</span><span class="time">3-15</span></a> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">著名书法家为大典献墨宝</span><span class="time">3-07</span></a> <a href="http://weishoot.com" target="_blank"><i></i><span class="txt">云南新平民族影像基地成立暨“色云南新平民族影像基地成立暨“色</span><span class="time">3-31</span></a> </div>
+      </div>
+    </div>
+    <div class="pointer" style="bottom: 1.4rem;">
+      <div class="pointerC"> <i class="checked"></i> <i></i> <i></i> <i></i> </div>
+    </div>
+    <a href="#periodical" target="_self">
+    <div class="arrow"> <i></i> <i></i> <i></i> </div>
+    </a> </article>
+  <!--招商方案-->
+  <article class="section">
+    <div class="slide-title"> <img src="images/periodical-title.png"> </div>
+    <a href="#partner" target="_self">
+    <div class="arrow"> <i></i> <i></i> <i></i> </div>
+    </a> </article>
+  <!--合作企业-->
+  <article class="section">
+    <div class="slide-title"> <img src="images/partner-title.png"> </div>
+    <div class="partner-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <ul class="med-list">
+            <a href="http://weishoot.com" target="_blank"> <img src="images/temp/1.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/2.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/3.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/4.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/5.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/6.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/7.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/8.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/9.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/10.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/11.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/12.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/13.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/14.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/15.png"> </a>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <ul class="med-list">
+            <a href="http://weishoot.com" target="_blank"> <img src="images/temp/1.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/2.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/3.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/4.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/5.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/6.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/7.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/8.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/9.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/10.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/11.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/12.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/13.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/14.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/15.png"> </a>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <ul class="med-list">
+            <a href="http://weishoot.com" target="_blank"> <img src="images/temp/1.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/2.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/3.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/4.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/5.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/6.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/7.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/8.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/9.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/10.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/11.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/12.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/13.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/14.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/15.png"> </a>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <ul class="med-list">
+            <a href="http://weishoot.com" target="_blank"> <img src="images/temp/1.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/2.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/3.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/4.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/5.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/6.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/7.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/8.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/9.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/10.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/11.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/12.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/13.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/14.png"> </a> <a href="http://weishoot.com" target="_blank"> <img src="images/temp/15.png"> </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="pointer" style="bottom: 1.8rem;">
+      <div class="pointerC"> <i class="checked"></i> <i></i> <i></i> <i></i> </div>
+    </div>
+  </article>
+</section>
+<div class="vote-Mask">
+  <div class="vote-ok">
+    <a href="javascript:$('.vote-Mask').hide();" class="close"></a>
+    <a href="#" target="_self"><img src="images/openweishoot.png" /></a>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="description" content="世界摄影（旅游）大会暨第五届国家摄影大典" />
+<title>获奖者报名</title>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('html').css('font-size', document.documentElement.clientHeight / document.documentElement.clientWidth < 1.5 ? document.documentElement.clientHeight / 603 * 312.5 + '%' : document.documentElement.clientWidth / 375 * 312.5 + '%');
+	});
+</script>
+</head>
+<body>
+<section class="signprize">
+  <article><img src="images/enroll-title2.png"/></article>
+  <article>
+    <lable>
+      <span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</span>
+      <input type="text" class="userName" name="" maxlength="10" placeholder="请输入您的姓名">
+    </lable>
+    <lable>
+      <span>联系电话</span>
+      <input type="text" class="tel" name=""  maxlength="11" placeholder="请输入您的联系电话">
+    </lable>
+    <lable>
+      <span>赛事名称</span>
+      <input type="text" class="gameName" name=""  maxlength="11" placeholder="请输入当前赛事名称">
+    </lable>
+    <lable>
+      <span>获奖作品</span>
+      <input type="text" class="prizeName" name="" maxlength="11" placeholder="请输入您的获奖作品">
+    </lable>
+    <lable>
+      <span>奖&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;项</span>
+      <input type="text" class="makePrize" name=""  maxlength=”11” placeholder="请输入您获奖的奖项">
+    </lable>
+    <lable>
+      <span>工作单位</span>
+      <input type="text" class="address" name=""  maxlength="30" placeholder="请输入您的工作单位">
+    </lable>
+    <lable class="mark">
+      <span>备注信息</span>
+      <textarea type="text" class="describe" style=" height:1.5rem; max-height:1.5rem; min-height:1.5rem;" maxlength="140" name="" placeholder="请输入您需要备注的信息(140字以内)"></textarea>
+    </lable>
+  </article>
+  <div class="quickEnroll" style="margin-top: .5rem;" id="prizeBtn"><img src="images/enroll-btn3.png"/></div>
+</section>
+<div class="writeMessage" style="display: none;">
+  <div class="rel">
+    <i></i>
+    <div class="content">
+      <p></p>
+    </div>
+  </div>
+</div>
+<div class="successMessage" style="display: none;">
+  <div class="rel">
+    <i></i>
+    <div class="content" style="background-size: 66%">
+    </div>
+  </div>
+</div>
+<script src="js/test.js"></script>
+</body>
+</html>

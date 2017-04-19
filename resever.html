@@ -1,0 +1,154 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>现场预定</title>
+    <meta name="description" content="世界摄影（旅游）大会暨第五届国家摄影大典定于2017年3月30日在北京隆重举行">
+    <meta name="shareicon" content="http://weishoot.com/Content/ShareImages/LOGO.png">
+    <link href="css/Selection.css" rel="stylesheet">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <link href="css/Messages.css" rel="stylesheet">
+    <script>
+        $(function(){
+            $('html').css('font-size', document.documentElement.clientHeight / document.documentElement.clientWidth < 1.5 ? document.documentElement.clientHeight / 603 * 312.5 + '%' : document.documentElement.clientWidth / 375 * 312.5 + '%');
+        });
+    </script>
+</head>
+<body>
+<section class="reserve">
+    <div class="up_module">
+        <input type="hidden" id="hid_ucode" name="CreateUCode" value="36A7A66F-7523-4525-9D38-7BAA72074649">
+        <div class="nei">
+            <div class="tit" align="center"><img src="images/periodical-title.png" height="auto" width="100%"/></div>
+            <div class="selection_s">
+                <p><span><em>1.&nbsp;</em>条幅</span><span>
+                    <i></i>
+                    <input type="checkbox" name="ReserveID" value="1"
+                                                                onclick="return false;"></span></p>
+            </div>
+            <div class="selection_s">
+                <p><span><em>2.&nbsp;</em>展板</span><span>
+                    <i></i>
+                    <input type="checkbox" name="ReserveID" value="2"
+                                                                onclick="return false;"></span></p>
+            </div>
+            <div class="selection_s">
+                <p><span><em>3.&nbsp;</em>会议资料派发</span><span>
+                    <i></i>
+                    <input type="checkbox" name="ReserveID" value="3"
+                           onclick="return false;"></span></p>
+            </div>
+            <div class="selection_s">
+                <p><span><em>4.&nbsp;</em>会场推荐</span><span>
+                    <i></i>
+                    <input type="checkbox" name="ReserveID" value="4"
+                           onclick="return false;"></span></p>
+            </div>
+            <div class="selection_s">
+                <p><span><em>5.&nbsp;</em>大会10分钟推荐</span><span>
+                    <i></i>
+                    <input type="checkbox" name="ReserveID" value="5"
+                           onclick="return false;"></span></p>
+            </div>
+            <div class="selection_s">
+                <p><span><em>6.&nbsp;</em>微摄全年品牌推广</span><span>
+                    <i></i>
+                    <input type="checkbox" name="ReserveID" value="6"
+                                                                      onclick="return false;"></span></p>
+            </div>
+            <div class="selection_s">
+                <p><span><em>7.&nbsp;</em>赞助商</span><span>
+                    <i></i>
+                    <input type="checkbox" name="ReserveID" value="7"
+                           onclick="return false;"></span></p>
+            </div>
+            <div class="selection_s">
+                <p><span><em>8.&nbsp;</em>独家冠名</span><span>
+                    <i></i>
+                    <input type="checkbox" name="ReserveID" value="8"
+                           onclick="return false;"></span></p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="module">
+        <div class="nei">
+            <div class="title spread">推广内容</div>
+            <div class="name">
+                <textarea cols="19" rows="5" class="describes" name="describes" style="resize: none;"
+                          placeholder="请填写您的推荐理由(140字以内)"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="module">
+        <div class="nei">
+            <div class="title contract_us"><i class="person_info"></i>联系方式</div>
+            <div class="name">
+                <span>姓&nbsp; &nbsp; &nbsp; &nbsp;名</span>
+                <input type="text" class="username" name="name" placeholder="请输入您的姓名或企业单位" value="猫哥测试3">
+            </div>
+            <div class="name">
+                <span>电&nbsp; &nbsp; &nbsp; &nbsp;话</span>
+                <i></i>
+                <input type="text" class="tel" name="tel" placeholder="请输入您的联系电话" value="">
+            </div>
+            <div class="name">
+                <span>电子邮箱</span>
+                <i></i>
+                <input type="email" name="ReserveID" value="1" class="email" name="email" placeholder="请输入正确的Email地址"
+                       value="">
+            </div>
+        </div>
+    </div>
+    <div class="error"></div>
+    <button type="submit" class="btn" name="submit" value="预定"><img src="images/reserve-btn.png"
+                                                                    style="width: 100%; max-width: 280px; height: auto"
+                                                                    width="100%" height="auto" alt=""></button>
+</section>
+<script>
+    var $selection_s = $('.selection_s');
+    $.each($selection_s, function (index, item) {
+        $(item).click(function () {
+            if ($(this).find('input').attr("checked") != "checked") {
+                $(this).find('input').attr("checked","checked");
+                $(this).find('i').animate({
+                    "width": "8px",
+                    "height": "8px",
+                    "top": "13px",
+                    "left": "3px",
+                    "backgroundColor": "#d9bb5f",
+                    "border-radius": "50%",
+                    "border": "4px solid red",
+                }, 200)
+            } else {
+                $(this).find('input').removeAttr("checked","checked");
+                $(this).find('i').animate({
+                    "width": "0px",
+                    "height": "0px",
+                    "top": "17px",
+                    "left": "7px",
+                    "border-radius": "50%",
+                }, 200)
+            }
+        });
+
+
+    });
+</script>
+<script src="js/testReserves.js"></script>
+
+<div class="writeMessage" style="display: none;">
+    <div class="rel">
+        <i></i>
+        <div class="content">
+            <p>请输入您的姓名</p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

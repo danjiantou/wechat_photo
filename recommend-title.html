@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="description" content="世界摄影（旅游）大会暨第五届国家摄影大典" />
+<title>评选推荐</title>
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('html').css('font-size', document.documentElement.clientHeight / document.documentElement.clientWidth < 1.5 ? document.documentElement.clientHeight / 603 * 312.5 + '%' : document.documentElement.clientWidth / 375 * 312.5 + '%');
+	});
+
+</script>
+</head>
+<body style="background-color: #0b071e;">
+<section class="signprize">
+  <article><img src="images/recommend-title.png"/></article>
+  <article>
+    <lable>
+      <span>项目名称</span>
+      <select name="drop1" class="ui-select userName">
+        <option value="">请选择您要推荐的项目</option>
+        <option value="1">十大古镇</option>
+        <option value="2">十大名族美女</option>
+        <option value="3">十大旅游胜地</option>
+      </select>
+    </lable>
+    <lable>
+      <span>标题</span>
+      <input type="text" class="tit" name=""  maxlength="11" placeholder="请填写推荐名称">
+    </lable>
+    <lable class="mark" style="height: 1.7rem;">
+      <span>描述</span>
+      <textarea type="text" class="describeA" style="resize: none; height:1.3rem; max-height:1.3rem; min-height:1.3rem;" class="describe" maxlength="140" name="" placeholder="请对您推荐的项目做一个简单的描述(140字以内)"></textarea>
+    </lable>
+    <lable class="mark" style="height: 1.7rem;">
+      <span>理由</span>
+      <textarea type="text" class="describe" style="resize: none; height:1rem; max-height:1rem; min-height:1rem;" class="describe" maxlength="140" name="" placeholder="请填写推荐的理由(140字以内)"></textarea>
+    </lable>
+  </article>
+  <article>
+    <div class="mc">推荐图片</div>
+    <div class="pic">
+      <div class="add"><input type="file" name="" style="width: 100%; opacity: 0;"></div>
+      <div class="swiper-container slides" id="swiper-container2">
+        <div class="swiper-wrapper slides_r">
+          <div class="swiper-slide img">
+            <i><img src="images/delphoto.png" alt=""></i>
+            <img src="images/binbin.png" alt="">
+          </div>
+          <div class="swiper-slide img">
+            <i><img src="images/delphoto.png" alt=""></i>
+            <img src="images/binbin.png" alt="">
+          </div>
+          <div class="swiper-slide img">
+            <i><img src="images/delphoto.png" alt=""></i>
+            <img src="images/binbin.png" alt="">
+          </div>
+          <div class="swiper-slide img">
+            <i><img src="images/delphoto.png" alt=""></i>
+            <img src="images/binbin.png" alt="">
+          </div>
+          <div class="swiper-slide img">
+            <i><img src="images/delphoto.png" alt=""></i>
+            <img src="images/binbin.png" alt="">
+          </div>
+          <div class="swiper-slide img">
+            <i><img src="images/delphoto.png" alt=""></i>
+            <img src="images/binbin.png" alt="">
+          </div>
+          <div class="swiper-slide img">
+            <i><img src="images/delphoto.png" alt=""></i>
+            <img src="images/binbin.png" alt="">
+          </div>
+          <div class="swiper-slide img">
+            <i><img src="images/delphoto.png" alt=""></i>
+            <img src="images/binbin.png" alt="">
+          </div>
+          <div class="swiper-slide img">
+            <i><img src="images/delphoto.png" alt=""></i>
+            <img src="images/binbin.png" alt="">
+          </div>
+          <div class="swiper-slide img">
+            <i><img src="images/delphoto.png" alt=""></i>
+            <img src="images/binbin.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+  <div id="prizeBtn" class="quickEnroll"><img src="images/recommend-btn.png"/></div>
+</section>
+
+<div class="writeMessage" style="display: none;">
+  <div class="rel">
+    <i></i>
+    <div class="content">
+      <p></p>
+    </div>
+  </div>
+</div>
+<div class="successMessage" style="display: none;">
+  <div class="rel">
+    <i></i>
+    <div class="content" style="background-size: 66%">
+    </div>
+  </div>
+</div>
+<script src="js/recommendTest.js"></script>
+</body>
+</html>
